@@ -1,0 +1,598 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+/* Navbar */
+ .navbar {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 30;
+    backdrop-filter: blur(10px);
+    background-color: rgba(51, 51, 51, 0.5);
+    color: #F1EBDF;
+    padding: 10px 0;
+}
+#back{
+    background-image: url(./assets/Group\ 8.png);
+    background-size: cover;
+}
+.social{
+  display: flex;
+  padding: 10px;
+}
+.navbar ul{
+  display: flex;
+  flex-direction: row;
+  /* width: 30%; */
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.navbar ul li{
+  list-style: none;
+
+}
+.navbar ul li a img{
+  width: 30px;
+  fill:black ;
+  margin-left: 10px;
+}
+
+.logo img{
+  width: 100%;
+}
+.special{
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #F1EBDF;
+  font-size: 15px;
+  transition: color 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.nav-ul .button{
+  padding: 10px 13px;
+  border: 1px var(--color1) solid;
+  border-radius: 6px;
+  color: var(--color1);
+  text-decoration: none;
+}
+.navbar ul li a:hover{
+  color: var(--highlight);
+  cursor: pointer;
+
+}
+.navbar ul button{
+  
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #FFFFFF24 0%, #FFFFFF24 100%);
+  border-radius: 6px;
+  border: none;
+  padding: 12px 30px 12px 30px;
+  min-width: 160px;
+  transition: background-color 0.5s ease-in-out;
+
+}
+.navbar ul button:hover{
+  background-color: var(--highlight);
+  cursor: pointer;
+
+}
+.burger {
+  position: relative;
+  width: 30px;
+  height: 20px;
+
+  cursor: pointer;
+  display: none;
+}
+
+.burger span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+
+  transform-origin: center center;
+  background-color: white;
+  border-radius: 2px;
+
+  transition: .4s all ease;
+}
+
+.burger span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.burger span:nth-child(2) {
+  top: 50%;
+  left: 0;
+}
+.burger span:nth-child(3) {
+  top: 100%;
+  left: 0;
+}
+
+.burger.active > span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.burger.active > span:nth-child(2) {
+  left: 100%;
+  opacity: 0;
+}
+.burger.active > span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+  .navbar {
+    background-color: rgba(104, 120, 158, 0.39); 
+    color: #fff;
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .logo img {
+    width: 110px;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-left: 50px;
+  }
+
+  .nav-links li:first-child {
+    margin-left: 0;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .nav-links li a:hover {
+    color: #daa520;
+  }
+
+  .nav-links button{
+    background-color: #f1ebdf;
+    text-decoration: none;
+    border: none;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 0%;
+  }
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: white;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content p {
+    font-size: 23px;
+    margin-bottom: 30px;
+    color: white;
+    
+}
+
+.main-icon {
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.main-icon img {
+    width: 450px;
+    height: 400px;
+}
+.centre{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #DDEEFF;
+}
+.ligne h1{
+    color: blue;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.containere {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h2 {
+    color: #009fe3;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header h1 {
+    color: #007bff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.header p {
+    color: #6c757d;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contente {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #007bff;
+    margin: 20px;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+   
+}
+
+.card h3 {
+    color: #007bff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+   
+}
+
+.card ul li {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+.join-button {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 50px;
+
+}
+.blu{
+  font-size: 35px;
+}
+.blux{
+    color: #0056b3;
+    font-size: 40px;
+}
+.join-button a {
+    BORDER: 1px solid #007bff;
+font-size: medium;
+    color: #007bff;
+    padding: 10px 20px;
+   font-weight: bold;
+   font-family: cursive;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.join-button a:hover {
+    background-color: rgb(116, 181, 251);
+    color: white;
+}
+.servicess{
+    display: flex;
+    width: 82%;
+    PADDING: 90px 0;
+}
+.servicess div p{
+  font-size: medium;
+  margin: 30px;
+}
+.servicess p{
+    font-size: 15px;
+    margin: 10px;
+}
+.items{
+    text-align: center;
+    color: white;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.para1{
+    DISPLAY: flex;
+    ALIGN-ITEMS: center;
+    JUSTIFY-CONTENT: center;
+}
+.containre1{
+    display: flex;
+    ALIGN-ITEMS: center;
+    JUSTIFY-CONTENT: space-evenly;
+    width: 103%;
+}
+.items img{
+    width: 100px;
+}
+#icons{
+    width: 100%;
+    background-image: url(./assets/Group\ 6.png);
+
+}
+.items h1{
+font-weight: bold;
+font-size: 60px;
+color: white;
+text-align: justify;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.items p{
+    text-align: center;
+}
+
+.method-section{
+    text-align: center;
+    margin: 90px;
+    padding: 20px;
+    background: #ddeeff;
+}
+.pro-section{
+  text-align: center;
+  margin: 90px;
+  padding: 20px;
+  
+}
+.method-section .box{
+  display: inline-flex;
+    align-items: center;
+}
+
+.pro-section p{
+  font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: serif;
+}
+.method-section h2, .pro-section h3 {
+    color: #00a1f1;
+    font-size: 30px;
+    font-weight: BOLD;
+    font-family: cursive;
+}
+.method-section img{
+    width: 30px;
+    height: 30PX;
+}
+.method-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+.method-section p {
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+}
+
+.method-section ul li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #2D97FE;
+    font-family: cursive;
+    background: white;
+    border: 1px solid #2D97FE;
+  font-weight: bold;
+   
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-secondary {
+  color: #2D97FE;
+    font-family: cursive;
+    font-weight: bold;
+    width: 400px;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background: #90c6fb;
+    color:white;
+}
+
+.container3 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 20px;
+  text-align: center;
+align-items: center;
+margin: auto;
+}
+
+.box1 {
+  background-color: white;
+
+ 
+  padding: 20px;
+  border: 1px solid #6d8dc7;
+
+  flex: 1;
+  margin: 10px;
+}
+.box{
+  display: inline-flex;
+    align-items: center;
+}
+.box1 h2 {
+  color: #007bff;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.box1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.box1 ul li {
+  margin-bottom: 10px;
+}
+
+.box1 p {
+  margin: 10px 0;
+}
+.section{
+  display: block;
+ 
+}
+.contact-section {
+  margin-top: 50px;
+  background-color: #007bff;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-form,
+.contact-info {
+font-size: larger;
+  padding: 20px;
+  font-family:'Times New Roman', Times, serif;
+  
+  margin: 10px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+ 
+}
+
+.contact-form button {
+  padding: 8px;
+  background-color: white;
+  color:black;
+  border: none;
+font-family: cursive;
+ font-size: large;
+  cursor: pointer;
+  width: 130px;
+}
+
+.contact-form button:hover {
+  background-color: #2D97FE;
+  color: white;
+}
+
+
+
+.contact-info p {
+  margin: 10px 0;
+}
+#message{
+  height: 100px;
+}
